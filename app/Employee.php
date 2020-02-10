@@ -19,7 +19,7 @@ class Employee extends Model{
         $employyes = DB::table('employees')->where($column, 'LIKE', '%'.$employye.'%')->get();
 
         $employyes->transform(function ($item) {
-            $item->email = implode(".", explode(' ', $item->name)).'@gmail.com';
+            $item->email = strtolower(implode(".", explode(' ', $item->name))).'@gmail.com';
             unset($item->created_at);
             unset($item->updated_at);
 
