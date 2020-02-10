@@ -1,0 +1,25 @@
+@import 'tailwind';
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,800&display=swap');
+@import "general.css";
+
+button {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+a{
+    cursor:pointer;
+}
+button:focus,
+input:focus{
+    outline:0;
+}
+body{
+    font-weight: 300;
+    font-size: 15px;
+}
+
+@screen xlg{
+    .container{
+        width: 1170px;
+    }
+}
