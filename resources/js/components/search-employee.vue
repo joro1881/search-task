@@ -60,7 +60,7 @@
                 this.fetching = false;
                 this.$validator.validate().then(valid => {
                     if (valid) {
-                        axios.get(location.origin + '/search-task/', {
+                        axios.get(location.origin, {
                             params: {
                                 searchValue: this.value,
                                 criteria: this.criteria,

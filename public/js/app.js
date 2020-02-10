@@ -1969,7 +1969,7 @@ __webpack_require__.r(__webpack_exports__);
       this.fetching = false;
       this.$validator.validate().then(function (valid) {
         if (valid) {
-          axios.get(location.origin + '/search-task/', {
+          axios.get(location.origin, {
             params: {
               searchValue: _this.value,
               criteria: _this.criteria
