@@ -18,14 +18,14 @@
             </div>
         </form>
         <div class="pt-2">
-            <span v-show="errors.first('search')" class="text-red-500">{{ errors.first('search') }}</span>
-            <span v-show="errorMsg" class="text-red-500">{{errorMsg}}</span>
+            <span v-if="errors.first('search')" class="text-red-500">{{ errors.first('search') }}</span>
+            <span v-else-if="errorMsg" class="text-red-500">{{errorMsg}}</span>
         </div>
         <div class="md:w-2/3 search-box" v-show="fetching">
-            <div class="w-1/4"><span>Name</span></div>
-            <div class="w-1/4"><span>Phone</span></div>
-            <div class="w-1/4"><span>Department</span></div>
-            <div class="w-1/4 text-right md:text-left"><span>Email</span></div>
+            <div class="w-1/4 font-semibold"><span>Name</span></div>
+            <div class="w-1/4 font-semibold"><span>Phone</span></div>
+            <div class="w-1/4 font-semibold"><span>Department</span></div>
+            <div class="w-1/4 font-semibold text-right md:text-left"><span>Email</span></div>
         </div>
         <div
             v-for="employee in employees"
