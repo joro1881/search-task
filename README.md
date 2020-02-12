@@ -1,4 +1,6 @@
  README Search Task 
+ 
+ Assigment specs in folder 'assigment-task' 
 
  Main files implementing the assignment are : 
 
